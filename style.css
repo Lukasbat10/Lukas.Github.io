@@ -21,7 +21,7 @@ h1 {
 
 .linija {
   width: 100px;
-  border: none;
+  border: orange;
   border-top: 3px solid orange;
   margin: 1rem auto;
 }
