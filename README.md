@@ -27,7 +27,7 @@
 
   <section class="content" id="o-meni">
     <h2>O meni</h2>
-    <p>Zovem se [Tvoje Ime] i ovo je moj GitHub projekt. Ovdje istražujem web development, dizajn i sve između. Cilj mi je naučiti, dijeliti i graditi zanimljive projekte.</p>
+    <p>Zovem se Lukas Batovanja i ovo je moj GitHub projekt. Ovdje istražujem web development, dizajn i sve između. Cilj mi je naučiti, dijeliti i graditi zanimljive projekte.</p>
   </section>
 
   <footer>
