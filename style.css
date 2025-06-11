@@ -1,31 +1,133 @@
+
 body {
-  margin: 0;
-  padding: 0;
-  background-color: #000;
-  color: orange;
-  font-family: 'Roboto', sans-serif;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.centered {
-  text-align: center;
-}
-
-h1 {
-  font-size: 4rem;
-  margin-bottom: 1rem;
-}
-
-.linija {
-  width: 100px;
-  border: orange;
-  border-top: 10px solid orange;
-  margin: 1rem auto;
-}
-
-p {
-  font-size: 2rem;
-}
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #ffcc00;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  
+  nav {
+    background-color: #111;
+    padding: 1rem;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 2px solid #ffcc00;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 1.5rem;
+  }
+  
+  nav ul li a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: white;
+  }
+  
+  
+  .centered {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    color: #ffcc00;
+  }
+  
+  p {
+    font-size: 1.25rem;
+    line-height: 1.6;
+  }
+  
+  
+  .linija {
+    width: 500px;
+    border-top: 5px solid #ffcc00;
+    margin: 2rem auto;
+  }
+  
+  .sekcija {
+    padding: 4rem 2rem;
+    text-align: left;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  
+  .sekcija > h2, .sekcija > h3, .sekcija > h4, .sekcija > p, .sekcija > ul {
+    background-color: #111;
+    border-left: 5px solid #ffcc00;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #ffcc0055;
+  }
+  
+  .sekcija ul {
+    padding-left: 2rem;
+  }
+  
+  .sekcija ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  
+  h2, h3, h4 {
+    color: #ffe066;
+  }
+  
+  
+  a {
+    color: #ffdd44;
+  }
+  
+  a:hover {
+    color: white;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .centered {
+      height: auto;
+      padding: 3rem 1rem;
+    }
+  
+    h1 {
+      font-size: 2.5rem;
+    }
+  
+    .linija {
+      width: 80%;
+    }
+  
+    .sekcija {
+      padding: 2rem 1rem;
+    }
+  }
+  
