@@ -19,7 +19,13 @@ h1 {
   margin-bottom: 1rem;
 }
 
+.linija {
+  width: 100px;
+  border: none;
+  border-top: 3px solid orange;
+  margin: 1rem auto;
+}
+
 p {
   font-size: 2rem;
 }
-
