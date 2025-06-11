@@ -22,7 +22,7 @@ h1 {
 .linija {
   width: 100px;
   border: orange;
-  border-top: 3px solid orange;
+  border-top: 10px solid orange;
   margin: 1rem auto;
 }
 
