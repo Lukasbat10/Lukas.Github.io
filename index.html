@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Moja Web Stranica</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div><strong>MojaStranica</strong></div>
+      <div>
+        <a href="#pocetna">Početna</a>
+        <a href="#o-meni">O meni</a>
+        <a href="#kontakt">Kontakt</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero" id="pocetna">
+    <h1>Dobrodošli na moju stranicu</h1>
+    <p>Moderna web stranica izrađena s ljubavlju i stilom</p>
+  </section>
+
+  <section class="content" id="o-meni">
+    <h2>O meni</h2>
+    <p>Zovem se [Tvoje Ime] i ovo je moj GitHub projekt. Ovdje istražujem web development, dizajn i sve između. Cilj mi je naučiti, dijeliti i graditi zanimljive projekte.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 MojaStranica. Sva prava pridržana.</p>
+  </footer>
+
+</body>
+</html>
