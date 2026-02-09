@@ -1,16 +1,15 @@
 # MyDailyPlanner
 
 MyDailyPlanner je aplikacija za dnevno planiranje i organizaciju obaveza.
-Ova stranica predstavlja crowdfunding kampanju za razvoj aplikacije.
+Ovaj repozitorij sadrži crowdfunding web stranicu za podršku razvoju aplikacije.
 
 ## 🎯 Cilj projekta
-Cilj projekta je prikupiti sredstva za:
 - razvoj osnovne verzije aplikacije
 - dizajn korisničkog sučelja
-- testiranje i objavu aplikacije
+- testiranje i objava aplikacije
 
-## 🌍 Web stranica
-👉 https://lukasbat10.github.io/IME_REPOZITORIJA/
+## 🌍 Live demo
+https://lukasbat10.github.io
 
 ## 🛠 Tehnologije
 - HTML
@@ -18,4 +17,4 @@ Cilj projekta je prikupiti sredstva za:
 - GitHub Pages
 
 ## 👤 Autor
-**Lukas Batovanja**
+Lukas Batovanja
