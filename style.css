@@ -1,142 +1,182 @@
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.6;
-  color: #222;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #eee;
+  background: #111;
+}
+
+/* NAV */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background: #000;
+}
+
+nav .logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #ff5722;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: #eee;
+  text-decoration: none;
+}
+
+nav .cta {
+  color: #ff5722;
+  font-weight: bold;
 }
 
 /* HERO */
 .hero {
-  background: url("https://images.unsplash.com/photo-1506784983877-45594efa4cbe") center/cover no-repeat;
   height: 90vh;
+  background: linear-gradient(
+      rgba(0,0,0,0.7),
+      rgba(0,0,0,0.7)
+    ),
+    url("https://images.unsplash.com/photo-1498050108023-c5249f4df085")
+    center/cover no-repeat;
   display: flex;
   align-items: center;
-  justify-content: center;
-  color: white;
-  text-align: center;
+  padding: 0 10%;
 }
 
-.hero-content {
-  background: rgba(0, 0, 0, 0.6);
-  padding: 40px;
-  border-radius: 10px;
+.hero-text {
+  max-width: 600px;
 }
 
 .hero h1 {
   font-size: 3rem;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  color: #ff5722;
 }
 
-.btn {
+.btn-primary {
   display: inline-block;
   margin-top: 20px;
-  padding: 12px 30px;
-  background: #4CAF50;
-  color: white;
+  padding: 14px 30px;
+  background: #ff5722;
+  color: #000;
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
 }
 
-.btn:hover {
-  background: #43a047;
-}
-
 /* SECTIONS */
 .section {
-  padding: 60px 10%;
+  padding: 70px 10%;
+  background: #111;
+}
+
+.section.dark {
+  background: #000;
+}
+
+.section.highlight {
+  background: linear-gradient(135deg, #ff5722, #ff9800);
+  color: #000;
+  text-align: center;
 }
 
 .section h2 {
   text-align: center;
   margin-bottom: 40px;
+  color: #ff9800;
 }
 
-.section.light {
-  background: #f5f5f5;
-}
-
-.center {
-  text-align: center;
-  max-width: 700px;
-  margin: auto;
-}
-
-/* CONTENT */
-.content {
+/* SPLIT */
+.split {
   display: flex;
-  gap: 30px;
+  gap: 40px;
   align-items: center;
 }
 
-.content img {
+.split.reverse {
+  flex-direction: row-reverse;
+}
+
+.split img {
   width: 50%;
   border-radius: 10px;
 }
 
-.content div {
-  width: 50%;
-}
-
-/* GOAL */
-.goal {
+/* CARDS */
+.cards {
   display: flex;
-  align-items: center;
   gap: 30px;
 }
 
-.goal img {
-  width: 50%;
+.card {
+  background: #111;
+  padding: 30px;
+  border-left: 5px solid #ff5722;
+  flex: 1;
+}
+
+/* PROGRESS */
+.progress-box {
+  max-width: 600px;
+  margin: 0 auto 50px;
+}
+
+.progress-bar {
+  background: #333;
   border-radius: 10px;
+  overflow: hidden;
+  height: 20px;
 }
 
-/* DONATE */
-.donate {
-  background: #222;
-  color: white;
-  text-align: center;
+.progress {
+  width: 43%;
+  height: 100%;
+  background: linear-gradient(90deg, #ff5722, #ff9800);
 }
 
-.donation-box {
-  margin-top: 30px;
-}
-
-.donation-box button {
+/* DONATIONS */
+.donations button {
   padding: 15px 25px;
   margin: 10px;
   border: none;
-  border-radius: 5px;
   font-size: 1rem;
   cursor: pointer;
+  background: #000;
+  color: #ff5722;
+  border-radius: 5px;
 }
 
-.donation-box button:hover {
-  background: #4CAF50;
-  color: white;
+.donations button:hover {
+  background: #111;
 }
 
 /* FOOTER */
 footer {
-  text-align: center;
   padding: 20px;
-  background: #111;
-  color: #aaa;
+  text-align: center;
+  background: #000;
+  color: #777;
 }
 
 /* RESPONSIVE */
-@media (max-width: 768px) {
-  .content, .goal {
+@media (max-width: 900px) {
+  .split, .cards {
     flex-direction: column;
   }
 
-  .content img,
-  .goal img,
-  .content div {
+  .split img {
     width: 100%;
   }
 
