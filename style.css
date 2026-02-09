@@ -1,182 +1,142 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
-  font-family: "Segoe UI", Arial, sans-serif;
-  color: #eee;
-  background: #111;
-}
-
-/* NAV */
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 10%;
-  background: #000;
-}
-
-nav .logo {
-  font-size: 1.4rem;
-  font-weight: bold;
-  color: #ff5722;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-nav a {
-  color: #eee;
-  text-decoration: none;
-}
-
-nav .cta {
-  color: #ff5722;
-  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #222;
 }
 
 /* HERO */
 .hero {
+  background: url("https://images.unsplash.com/photo-1506784983877-45594efa4cbe") center/cover no-repeat;
   height: 90vh;
-  background: linear-gradient(
-      rgba(0,0,0,0.7),
-      rgba(0,0,0,0.7)
-    ),
-    url("https://images.unsplash.com/photo-1498050108023-c5249f4df085")
-    center/cover no-repeat;
   display: flex;
   align-items: center;
-  padding: 0 10%;
+  justify-content: center;
+  color: white;
+  text-align: center;
 }
 
-.hero-text {
-  max-width: 600px;
+.hero-content {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 10px;
 }
 
 .hero h1 {
   font-size: 3rem;
-  margin-bottom: 20px;
-  color: #ff5722;
+  margin-bottom: 15px;
 }
 
-.btn-primary {
+.btn {
   display: inline-block;
   margin-top: 20px;
-  padding: 14px 30px;
-  background: #ff5722;
-  color: #000;
+  padding: 12px 30px;
+  background: #4CAF50;
+  color: white;
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
 }
 
+.btn:hover {
+  background: #43a047;
+}
+
 /* SECTIONS */
 .section {
-  padding: 70px 10%;
-  background: #111;
-}
-
-.section.dark {
-  background: #000;
-}
-
-.section.highlight {
-  background: linear-gradient(135deg, #ff5722, #ff9800);
-  color: #000;
-  text-align: center;
+  padding: 60px 10%;
 }
 
 .section h2 {
   text-align: center;
   margin-bottom: 40px;
-  color: #ff9800;
 }
 
-/* SPLIT */
-.split {
+.section.light {
+  background: #f5f5f5;
+}
+
+.center {
+  text-align: center;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* CONTENT */
+.content {
   display: flex;
-  gap: 40px;
+  gap: 30px;
   align-items: center;
 }
 
-.split.reverse {
-  flex-direction: row-reverse;
-}
-
-.split img {
+.content img {
   width: 50%;
   border-radius: 10px;
 }
 
-/* CARDS */
-.cards {
+.content div {
+  width: 50%;
+}
+
+/* GOAL */
+.goal {
   display: flex;
+  align-items: center;
   gap: 30px;
 }
 
-.card {
-  background: #111;
-  padding: 30px;
-  border-left: 5px solid #ff5722;
-  flex: 1;
-}
-
-/* PROGRESS */
-.progress-box {
-  max-width: 600px;
-  margin: 0 auto 50px;
-}
-
-.progress-bar {
-  background: #333;
+.goal img {
+  width: 50%;
   border-radius: 10px;
-  overflow: hidden;
-  height: 20px;
 }
 
-.progress {
-  width: 43%;
-  height: 100%;
-  background: linear-gradient(90deg, #ff5722, #ff9800);
+/* DONATE */
+.donate {
+  background: #222;
+  color: white;
+  text-align: center;
 }
 
-/* DONATIONS */
-.donations button {
+.donation-box {
+  margin-top: 30px;
+}
+
+.donation-box button {
   padding: 15px 25px;
   margin: 10px;
   border: none;
+  border-radius: 5px;
   font-size: 1rem;
   cursor: pointer;
-  background: #000;
-  color: #ff5722;
-  border-radius: 5px;
 }
 
-.donations button:hover {
-  background: #111;
+.donation-box button:hover {
+  background: #4CAF50;
+  color: white;
 }
 
 /* FOOTER */
 footer {
-  padding: 20px;
   text-align: center;
-  background: #000;
-  color: #777;
+  padding: 20px;
+  background: #111;
+  color: #aaa;
 }
 
 /* RESPONSIVE */
-@media (max-width: 900px) {
-  .split, .cards {
+@media (max-width: 768px) {
+  .content, .goal {
     flex-direction: column;
   }
 
-  .split img {
+  .content img,
+  .goal img,
+  .content div {
     width: 100%;
   }
 
