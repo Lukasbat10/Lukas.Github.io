@@ -1,133 +1,146 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #000;
-    color: #ffcc00;
-    font-family: 'Roboto', sans-serif;
-  }
-  
-  html {
-    scroll-behavior: smooth;
-  }
-  
-  
-  nav {
-    background-color: #111;
-    padding: 1rem;
-    text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    border-bottom: 2px solid #ffcc00;
-  }
-  
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin: 0 1.5rem;
-  }
-  
-  nav ul li a {
-    color: #ffcc00;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-  }
-  
-  nav ul li a:hover {
-    color: white;
-  }
-  
-  
-  .centered {
-    height: 80vh;
-    display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #222;
+}
+
+/* HERO */
+.hero {
+  background: url("https://images.unsplash.com/photo-1506784983877-45594efa4cbe") center/cover no-repeat;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.hero-content {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 30px;
+  background: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #43a047;
+}
+
+/* SECTIONS */
+.section {
+  padding: 60px 10%;
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section.light {
+  background: #f5f5f5;
+}
+
+.center {
+  text-align: center;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* CONTENT */
+.content {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.content img {
+  width: 50%;
+  border-radius: 10px;
+}
+
+.content div {
+  width: 50%;
+}
+
+/* GOAL */
+.goal {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.goal img {
+  width: 50%;
+  border-radius: 10px;
+}
+
+/* DONATE */
+.donate {
+  background: #222;
+  color: white;
+  text-align: center;
+}
+
+.donation-box {
+  margin-top: 30px;
+}
+
+.donation-box button {
+  padding: 15px 25px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.donation-box button:hover {
+  background: #4CAF50;
+  color: white;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  color: #aaa;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .content, .goal {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
   }
-  
-  h1 {
-    font-size: 4rem;
-    margin-bottom: 1rem;
-    color: #ffcc00;
+
+  .content img,
+  .goal img,
+  .content div {
+    width: 100%;
   }
-  
-  p {
-    font-size: 1.25rem;
-    line-height: 1.6;
+
+  .hero h1 {
+    font-size: 2.2rem;
   }
-  
-  
-  .linija {
-    width: 500px;
-    border-top: 5px solid #ffcc00;
-    margin: 2rem auto;
-  }
-  
-  .sekcija {
-    padding: 4rem 2rem;
-    text-align: left;
-    max-width: 900px;
-    margin: 0 auto;
-  }
-  
-  
-  .sekcija > h2, .sekcija > h3, .sekcija > h4, .sekcija > p, .sekcija > ul {
-    background-color: #111;
-    border-left: 5px solid #ffcc00;
-    padding: 1rem;
-    margin: 1.5rem 0;
-    border-radius: 8px;
-    box-shadow: 0 0 10px #ffcc0055;
-  }
-  
-  .sekcija ul {
-    padding-left: 2rem;
-  }
-  
-  .sekcija ul li {
-    margin-bottom: 0.5rem;
-  }
-  
-  
-  h2, h3, h4 {
-    color: #ffe066;
-  }
-  
-  
-  a {
-    color: #ffdd44;
-  }
-  
-  a:hover {
-    color: white;
-  }
-  
-  
-  @media (max-width: 768px) {
-    .centered {
-      height: auto;
-      padding: 3rem 1rem;
-    }
-  
-    h1 {
-      font-size: 2.5rem;
-    }
-  
-    .linija {
-      width: 80%;
-    }
-  
-    .sekcija {
-      padding: 2rem 1rem;
-    }
-  }
-  
+}
