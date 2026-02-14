@@ -1,4 +1,4 @@
-# 🚀 Lukas Web Development Project
+# MyDailyPlanner
 
 Profesionalna donacijska web stranica razvijena pomoću HTML, CSS i JavaScript.
 
