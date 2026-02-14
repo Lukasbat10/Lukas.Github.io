@@ -3,139 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lukas Projekt | Podrži Razvoj</title>
+    <title>MyDailyPlanner</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>🚀 Lukas Web Development Projekt</h1>
-        <p>Gradim moderne web aplikacije i učim svaki dan nešto novo.</p>
-        <a href="#donate" class="cta-btn">Podrži Projekt</a>
-    </header>
-
-    <section class="about">
-        <h2>📖 O Projektu</h2>
-        <p>
-            Ovaj projekt je započeo kao osobna inicijativa za učenje web developmenta.
-            Fokus je na modernim tehnologijama, dizajnu i optimizaciji performansi.
-        </p>
-        <p>
-            Cilj je izgraditi platformu koja će sadržavati korisne alate, interaktivne projekte
-            i edukativni sadržaj za početnike.
-        </p>
-    </section>
-
-    <section class="stats">
-        <h2>📊 Statistika Projekta</h2>
-        <div class="stats-container">
-            <div class="stat-box">
-                <h3>15+</h3>
-                <p>Završenih Projekata</p>
-            </div>
-            <div class="stat-box">
-                <h3>500+</h3>
-                <p>Sati Učenja</p>
-            </div>
-            <div class="stat-box">
-                <h3>2026</h3>
-                <p>Godina Aktivnog Razvoja</p>
-            </div>
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-overlay">
+            <h1>MyDailyPlanner</h1>
+            <p>Gradim moderne web aplikacije i konstantno unapređujem svoje znanje.</p>
+            <a href="#donate" class="cta-btn">Podrži Projekt</a>
         </div>
     </section>
 
-    <section class="goals">
-        <h2>🎯 Ciljevi Donacija</h2>
-        <ul>
-            <li>💻 Kupnja profesionalnih development alata</li>
-            <li>🌍 Hosting i domena</li>
-            <li>📚 Online edukacije i certifikati</li>
-            <li>⚡ Poboljšanje performansi i dizajna</li>
-        </ul>
+    <!-- ABOUT -->
+    <section class="container">
+        <h2>📖 O Projektu</h2>
+        <div class="card">
+            <p>
+                Ovaj projekt je osobna inicijativa za razvoj modernih web aplikacija.
+                Fokus je na dizajnu, performansama i profesionalnom pristupu.
+            </p>
+        </div>
     </section>
 
+    <!-- IMAGE GALLERY -->
+    <section class="container">
+        <h2>🖼 Galerija Projekata</h2>
+        <div class="gallery">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" alt="">
+            <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd" alt="">
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" alt="">
+            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6" alt="">
+            <img src="https://images.unsplash.com/photo-1484417894907-623942c8ee29" alt="">
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="">
+        </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="container stats">
+        <div class="stat-card">
+            <h3>15+</h3>
+            <p>Projekata</p>
+        </div>
+        <div class="stat-card">
+            <h3>500+</h3>
+            <p>Sati Učenja</p>
+        </div>
+        <div class="stat-card">
+            <h3>2026</h3>
+            <p>Aktivna Godina</p>
+        </div>
+    </section>
+
+    <!-- DONATION -->
     <section id="donate" class="donation-section">
-        <h2>💚 Podrži Projekt Donacijom</h2>
+        <h2>💚 Podrži Projekt</h2>
 
         <div class="progress-container">
             <div class="progress-bar" id="progressBar"></div>
         </div>
-        <p id="goalText">Cilj: 1000 €</p>
 
-        <div class="calculator">
+        <div class="donation-box">
             <input type="number" id="amount" placeholder="Unesi iznos (€)" min="1">
             <button onclick="addDonation()">Doniraj</button>
         </div>
 
-        <div class="total">
-            <h3>Ukupno donirano:</h3>
-            <p id="totalAmount">0 €</p>
-        </div>
+        <h3>Ukupno donirano:</h3>
+        <p id="totalAmount">0 €</p>
     </section>
 
-    <section class="roadmap">
-        <h2>🛣 Roadmap 2026</h2>
-        <ul>
-            <li>✅ Redizajn stranice</li>
-            <li>🔄 Implementacija backend sustava</li>
-            <li>📱 Potpuna mobilna optimizacija</li>
-            <li>🌐 Lansiranje novih projekata</li>
-        </ul>
-    </section>
-
-    <section class="faq">
-        <h2>❓ Često Postavljena Pitanja</h2>
-        <div class="faq-item">
-            <h4>Kako funkcioniraju donacije?</h4>
-            <p>Donacije se zbrajaju i prikazuju u kalkulatoru na stranici.</p>
-        </div>
-        <div class="faq-item">
-            <h4>Je li donacija sigurna?</h4>
-            <p>Ova verzija je demonstracijska. Za stvarne donacije potrebna je integracija s PayPal ili Stripe sustavom.</p>
-        </div>
-        <div class="faq-item">
-            <h4>Kako mogu pomoći osim donacijom?</h4>
-            <p>Dijeljenjem projekta i davanjem feedbacka.</p>
-        </div>
-    </section>
-
+    <!-- FOOTER -->
     <footer>
-        <p>© 2026 Lukas Web Projekt | Hvala na podršci 🙌</p>
+        © 2026 MyDailyPlanner
     </footer>
 
-    <script>
-        let total = localStorage.getItem("totalDonations");
-        let goal = 1000;
+<script>
+let total = localStorage.getItem("totalDonations");
+let goal = 1000;
 
-        if (total === null) {
-            total = 0;
-        } else {
-            total = parseFloat(total);
-        }
+if (total === null) total = 0;
+else total = parseFloat(total);
 
-        function updateUI() {
-            document.getElementById("totalAmount").innerText = total + " €";
-            let percentage = (total / goal) * 100;
-            if (percentage > 100) percentage = 100;
-            document.getElementById("progressBar").style.width = percentage + "%";
-        }
+function updateUI() {
+    document.getElementById("totalAmount").innerText = total + " €";
+    let percentage = (total / goal) * 100;
+    if (percentage > 100) percentage = 100;
+    document.getElementById("progressBar").style.width = percentage + "%";
+}
 
-        function addDonation() {
-            let amount = parseFloat(document.getElementById("amount").value);
-
-            if (!isNaN(amount) && amount > 0) {
-                total += amount;
-                localStorage.setItem("totalDonations", total);
-                updateUI();
-                document.getElementById("amount").value = "";
-                alert("Hvala na podršci! ❤️");
-            } else {
-                alert("Unesi ispravan iznos.");
-            }
-        }
-
+function addDonation() {
+    let amount = parseFloat(document.getElementById("amount").value);
+    if (!isNaN(amount) && amount > 0) {
+        total += amount;
+        localStorage.setItem("totalDonations", total);
         updateUI();
-    </script>
+        document.getElementById("amount").value = "";
+        alert("Hvala na podršci ❤️");
+    } else {
+        alert("Unesi ispravan iznos.");
+    }
+}
+
+updateUI();
+</script>
 
 </body>
 </html>
