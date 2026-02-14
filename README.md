@@ -1,20 +1,60 @@
-# MyDailyPlanner
+# 🚀 Lukas Web Development Project
 
-MyDailyPlanner je aplikacija za dnevno planiranje i organizaciju obaveza.
-Ovaj repozitorij sadrži crowdfunding web stranicu za podršku razvoju aplikacije.
+Profesionalna donacijska web stranica razvijena pomoću HTML, CSS i JavaScript.
 
-## 🎯 Cilj projekta
-- razvoj osnovne verzije aplikacije
-- dizajn korisničkog sučelja
-- testiranje i objava aplikacije
+---
 
-## 🌍 Live demo
-https://lukasbat10.github.io
+## 🌟 O Projektu
+
+Ovaj projekt služi kao platforma za učenje i razvoj modernih web tehnologija.
+Fokus je na dizajnu, performansama i korisničkom iskustvu.
+
+---
+
+## 💚 Donacije
+
+Stranica sadrži:
+
+- Kalkulator donacija
+- Progress bar prema cilju
+- LocalStorage spremanje podataka
+- Sekciju ciljeva i roadmap
+- FAQ sekciju
+
+---
+
+## 🎯 Cilj
+
+Prikupiti 1000 € za:
+- Hosting
+- Domenu
+- Edukacije
+- Profesionalne alate
+
+---
 
 ## 🛠 Tehnologije
-- HTML
-- CSS
+
+- HTML5
+- CSS3
+- JavaScript
 - GitHub Pages
 
-## 👤 Autor
-Lukas Batovanja
+---
+
+## 📌 Live Demo
+
+Hostano putem GitHub Pages.
+
+---
+
+## 📈 Budući Planovi
+
+- Backend integracija
+- PayPal/Stripe sustav
+- Login sustav
+- Admin panel
+
+---
+
+Autor: Lukas
