@@ -6,199 +6,191 @@
 
 body {
     font-family: 'Segoe UI', sans-serif;
-    background: #f4f6f9;
-    color: #333;
-    line-height: 1.7;
+    background: linear-gradient(135deg, #f0f4ff, #ffffff);
+    color: #222;
+    line-height: 1.6;
 }
 
-/* GLOBAL HEADINGS */
+/* GLOBAL */
 
 h1 {
-    font-size: 48px;
+    font-size: 52px;
     margin-bottom: 20px;
 }
 
 h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
     text-align: center;
-    margin-bottom: 40px;
-    font-size: 32px;
 }
 
-h3 {
-    margin-top: 30px;
-    margin-bottom: 15px;
-    font-size: 22px;
-}
-
-.container {
-    padding: 100px 10%;
-    max-width: 1200px;
-    margin: auto;
+section {
+    width: 100%;
+    padding: 80px 8%;
 }
 
 /* HERO */
 
 .hero {
     height: 100vh;
-    background: url("https://images.unsplash.com/photo-1492724441997-5dc865305da7") center/cover no-repeat;
+    background: linear-gradient(135deg, #667eea, #764ba2);
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    color: white;
 }
 
 .hero-overlay {
-    background: rgba(0,0,0,0.65);
-    padding: 60px;
-    color: white;
-    text-align: center;
-    border-radius: 20px;
-    max-width: 700px;
-}
-
-.hero-overlay p {
-    font-size: 18px;
-    opacity: 0.9;
+    max-width: 800px;
 }
 
 .cta-btn {
     display: inline-block;
-    margin-top: 25px;
-    padding: 14px 35px;
-    background: #00c853;
-    color: white;
-    text-decoration: none;
-    border-radius: 30px;
+    margin-top: 30px;
+    padding: 16px 40px;
+    background: #ffcc00;
+    color: black;
     font-weight: bold;
+    border-radius: 40px;
+    text-decoration: none;
     transition: 0.3s;
 }
 
 .cta-btn:hover {
-    background: #009624;
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
-/* CARD */
+/* ABOUT - VODORAVNO */
+
+.container {
+    width: 100%;
+}
 
 .card {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 50px;
     background: white;
-    padding: 50px;
-    border-radius: 20px;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+    padding: 60px;
+    border-radius: 30px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.08);
 }
 
 .card p {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .card ul {
-    margin-top: 15px;
-    margin-bottom: 20px;
-    padding-left: 20px;
+    list-style: none;
 }
 
 .card ul li {
     margin-bottom: 10px;
+    padding: 10px;
+    background: #f4f6ff;
+    border-radius: 10px;
 }
 
 /* GALLERY */
 
 .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
 }
 
 .gallery img {
-    width: 100%;
     height: 260px;
-    object-fit: cover;
-    border-radius: 15px;
-    transition: 0.4s ease;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border-radius: 20px;
+    transition: 0.4s;
 }
 
 .gallery img:hover {
-    transform: scale(1.05);
+    transform: scale(1.08);
 }
 
 /* STATS */
 
 .stats {
     display: flex;
-    justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
 }
 
 .stat-card {
-    background: white;
-    padding: 40px 60px;
-    border-radius: 20px;
+    flex: 1;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    padding: 50px;
+    border-radius: 25px;
     text-align: center;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    color: #222;
+    font-weight: bold;
     transition: 0.3s;
 }
 
-.stat-card:hover {
-    transform: translateY(-5px);
+.stat-card:nth-child(2) {
+    background: linear-gradient(135deg, #a18cd1, #fbc2eb);
 }
 
-.stat-card h3 {
-    font-size: 32px;
-    color: #00c853;
+.stat-card:nth-child(3) {
+    background: linear-gradient(135deg, #84fab0, #8fd3f4);
+}
+
+.stat-card:hover {
+    transform: translateY(-10px);
 }
 
 /* DONATION */
 
 .donation-section {
-    background: linear-gradient(135deg, #141e30, #243b55);
+    background: linear-gradient(135deg, #1d2671, #c33764);
     color: white;
     text-align: center;
-    padding: 100px 10%;
 }
 
 .progress-container {
-    width: 70%;
-    margin: 30px auto;
-    background: rgba(255,255,255,0.2);
-    border-radius: 20px;
-    height: 25px;
+    width: 100%;
+    margin: 30px 0;
+    background: rgba(255,255,255,0.3);
+    border-radius: 30px;
+    height: 30px;
 }
 
 .progress-bar {
     height: 100%;
     width: 0%;
-    background: #00e676;
-    border-radius: 20px;
-    transition: 0.5s;
+    background: #ffcc00;
+    border-radius: 30px;
+    transition: 0.6s ease;
 }
 
 .donation-box {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
     margin: 40px 0;
 }
 
 input {
-    padding: 12px;
-    border-radius: 5px;
+    padding: 14px;
+    border-radius: 10px;
     border: none;
-    width: 220px;
+    width: 250px;
     font-size: 16px;
 }
 
 button {
-    padding: 12px 25px;
-    border-radius: 5px;
+    padding: 14px 30px;
+    border-radius: 10px;
     border: none;
-    background: #00e676;
-    color: black;
+    background: #ffcc00;
     font-weight: bold;
     cursor: pointer;
-    margin-left: 10px;
     transition: 0.3s;
 }
 
 button:hover {
-    background: #00c853;
     transform: scale(1.05);
 }
 
@@ -208,38 +200,30 @@ footer {
     background: #111;
     color: white;
     text-align: center;
-    padding: 25px;
-    font-size: 14px;
-    letter-spacing: 1px;
+    padding: 30px;
 }
 
 /* RESPONSIVE */
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
 
-    h1 {
-        font-size: 32px;
+    .card {
+        grid-template-columns: 1fr;
     }
 
-    .hero-overlay {
-        padding: 40px;
+    .stats {
+        flex-direction: column;
     }
 
-    .container {
-        padding: 60px 5%;
-    }
-
-    .progress-container {
-        width: 90%;
+    .donation-box {
+        flex-direction: column;
     }
 
     input {
         width: 100%;
-        margin-bottom: 15px;
     }
 
     button {
         width: 100%;
-        margin-left: 0;
     }
 }
