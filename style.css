@@ -8,73 +8,113 @@ body {
     font-family: 'Segoe UI', sans-serif;
     background: #f4f6f9;
     color: #333;
+    line-height: 1.7;
+}
+
+/* GLOBAL HEADINGS */
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
 }
 
 h2 {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
+h3 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 22px;
 }
 
 .container {
-    padding: 80px 10%;
+    padding: 100px 10%;
+    max-width: 1200px;
+    margin: auto;
 }
 
 /* HERO */
 
 .hero {
     height: 100vh;
-    background: url("https://images.unsplash.com/photo-1492724441997-5dc865305da7") center/cover;
+    background: url("https://images.unsplash.com/photo-1492724441997-5dc865305da7") center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .hero-overlay {
-    background: rgba(0,0,0,0.6);
-    padding: 50px;
+    background: rgba(0,0,0,0.65);
+    padding: 60px;
     color: white;
     text-align: center;
     border-radius: 20px;
+    max-width: 700px;
+}
+
+.hero-overlay p {
+    font-size: 18px;
+    opacity: 0.9;
 }
 
 .cta-btn {
     display: inline-block;
-    margin-top: 20px;
-    padding: 12px 30px;
+    margin-top: 25px;
+    padding: 14px 35px;
     background: #00c853;
     color: white;
     text-decoration: none;
     border-radius: 30px;
+    font-weight: bold;
     transition: 0.3s;
 }
 
 .cta-btn:hover {
     background: #009624;
+    transform: scale(1.05);
 }
 
 /* CARD */
 
 .card {
     background: white;
-    padding: 40px;
+    padding: 50px;
     border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+.card p {
+    margin-bottom: 20px;
+}
+
+.card ul {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.card ul li {
+    margin-bottom: 10px;
 }
 
 /* GALLERY */
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
 }
 
 .gallery img {
     width: 100%;
-    height: 250px;
+    height: 260px;
     object-fit: cover;
     border-radius: 15px;
-    transition: 0.4s;
+    transition: 0.4s ease;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
 .gallery img:hover {
@@ -92,10 +132,20 @@ h2 {
 
 .stat-card {
     background: white;
-    padding: 30px 50px;
+    padding: 40px 60px;
     border-radius: 20px;
     text-align: center;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-card h3 {
+    font-size: 32px;
+    color: #00c853;
 }
 
 /* DONATION */
@@ -104,12 +154,12 @@ h2 {
     background: linear-gradient(135deg, #141e30, #243b55);
     color: white;
     text-align: center;
-    padding: 80px 10%;
+    padding: 100px 10%;
 }
 
 .progress-container {
     width: 70%;
-    margin: 20px auto;
+    margin: 30px auto;
     background: rgba(255,255,255,0.2);
     border-radius: 20px;
     height: 25px;
@@ -124,27 +174,32 @@ h2 {
 }
 
 .donation-box {
-    margin: 30px 0;
+    margin: 40px 0;
 }
 
 input {
-    padding: 10px;
+    padding: 12px;
     border-radius: 5px;
     border: none;
-    width: 200px;
+    width: 220px;
+    font-size: 16px;
 }
 
 button {
-    padding: 10px 20px;
+    padding: 12px 25px;
     border-radius: 5px;
     border: none;
     background: #00e676;
     color: black;
+    font-weight: bold;
     cursor: pointer;
+    margin-left: 10px;
+    transition: 0.3s;
 }
 
 button:hover {
     background: #00c853;
+    transform: scale(1.05);
 }
 
 /* FOOTER */
@@ -153,5 +208,38 @@ footer {
     background: #111;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 25px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .hero-overlay {
+        padding: 40px;
+    }
+
+    .container {
+        padding: 60px 5%;
+    }
+
+    .progress-container {
+        width: 90%;
+    }
+
+    input {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    button {
+        width: 100%;
+        margin-left: 0;
+    }
 }
